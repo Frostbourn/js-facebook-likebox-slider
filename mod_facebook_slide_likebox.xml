@@ -9,7 +9,7 @@
     <authorUrl>https://jsns.eu</authorUrl>
     <version>6.4.0</version>
     <description>
-        <![CDATA[<div><a title="" href="https://jsns.eu" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""/></a><br><center><a class="btn btn-small button-apply btn-success" href="https://jsns.eu/plans/joomla-extensions/js-facebook-like-box-slider/sign-up" target="_blank">Remove the copyright url and support our work</a><br></center></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://docs.jsns.eu/" target="_blank" rel="alternate">CLICK</a></li></ul>]]>
+        <![CDATA[<div><a title="" href=">https://jakubskowronski.com" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""/></a><br><center><a class="btn btn-small button-apply btn-success" href="https://jsns.eu/plans/joomla-extensions/js-facebook-like-box-slider/sign-up" target="_blank">Remove the copyright url and support our work</a><br></center></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://docs.jsns.eu/" target="_blank" rel="alternate">CLICK</a></li></ul>]]>
     </description>
     <files>
         <filename>mod_facebook_slide_likebox.xml</filename>
@@ -22,7 +22,7 @@
         <folder>tmpl/css/</folder>
     </files>
     <updateservers>
-        <server type="extension" priority="1" name="JS Facebook Slide Likebox">https://jsns.eu/facebooklikebox.xml</server>
+        <server type="extension" priority="1" name="JS Facebook Slide Likebox">https://jakubskowronski.com/joomla/mod_facebook_slide_likebox/update.xml</server>
     </updateservers>
     <config>
         <fields name="params">
