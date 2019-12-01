@@ -3,11 +3,11 @@
     <name>JS Facebook Likebox Slider</name>
     <author>Jakub Skowroński</author>
     <creationDate>2013-07-15</creationDate>
-    <copyright>Copyright (C) 2010 - https://jsns.eu All rights reserved.</copyright>
+    <copyright>Copyright (C) 2010 - https://jakubskowronski.com All rights reserved.</copyright>
     <license>GPL 2.0</license>
-    <authorEmail>support@jsns.eu</authorEmail>
-    <authorUrl>https://jsns.eu</authorUrl>
-    <version>6.5.0</version>
+    <authorEmail>kontakt@jakubskowronski.com</authorEmail>
+    <authorUrl>https://jakubskowronski.com</authorUrl>
+    <version>6.5.5</version>
     <description>
         <![CDATA[<div><a title="" href=">https://jakubskowronski.com" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""/></a></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://github.com/Frostbourn/js-facebook-likebox-slider/" target="_blank" rel="alternate">CLICK</a></li></ul>]]>
     </description>
