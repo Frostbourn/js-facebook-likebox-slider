@@ -1,7 +1,7 @@
 # JS Facebook Likebox Slider
 
 Take a look at the [demo](https://jakubskowronski.com/joomla).
-#### Version: 6.5.0
+#### Version: 6.5.5
 
 Display Facebook and Twitter on your site in beautiful box which slides in from page edge in a handy way! Very easy to configure. Module can be activated with mouse move. The advantage of this module is a way that it presents to User. It takes very little space on your site and can be viewed at any time because toggle-tab does not scroll with page and always stays in one place.
 
