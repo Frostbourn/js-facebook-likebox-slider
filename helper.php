@@ -34,12 +34,12 @@ class modSlideLikebox {
 					<?php
                     if (trim($params->get('facebook')) == 1) { ?>
 						<a class="facebook pop-upper" href="https://www.facebook.com/<?php echo $params->get('profile_id') ?>" target="_blank">
-							<i class="fab fa-facebook-f"></i>
+							<i class="fa fa-facebook-f"></i>
 						</a>
 					<?php }
             if (trim($params->get('twitter')) == 1) { ?>
 						<a class="twitter pop-upper" href="https://twitter.com/<?php echo $params->get('twitter_login'); ?>" target="_blank">
-							<i class="fab fa-twitter"></i>
+							<i class="fa fa-twitter"></i>
 						</a>
 					<?php } ?>
 				</div>
