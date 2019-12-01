@@ -28,6 +28,10 @@
         <fields name="params">
             <fieldset name="basic">
               <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix"/>
+                <field name="show_on_mobile" type="radio" class="btn-group"  default="1" label="Show on mobile devices" description="">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
                 <field name="position" type="list" default="0" label="Position" description="">
                     <option value="1">Left</option>
                     <option value="0">Right</option>

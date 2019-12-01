@@ -14,31 +14,38 @@ class modSlideLikebox {
 			$document = JFactory::getDocument();
 
 #______________________MOBILE________________________
-			if (trim($params->get('twitter')) == 1) { $t = 1;} else { $t=0; }
-			if (trim($params->get('facebook')) == 1) { $f = 1;} else { $f=0; }
+        if (trim($params->get('show_on_mobile')) == 1) {
+            if (trim($params->get('twitter')) == 1) {
+                $t = 1;
+            } else {
+                $t=0;
+            }
+            if (trim($params->get('facebook')) == 1) {
+                $f = 1;
+            } else {
+                $f=0;
+            }
 
-			$sum = $f + $t;
-			$mobile = '#social_mobile a {position: relative;float: left; width: calc(100% / ' . $sum . ');display:list-item; list-style-type: none;} #social_mobile a:focus, #social_mobile a:hover { width: calc(100% / ' . $sum . ');-moz-transition-property: none; -webkit-transition-property: none; -o-transition-property: none;transition-property: none;}';
-			$document->addStyleDeclaration( $mobile );
-			?>
+            $sum = $f + $t;
+            $mobile = '#social_mobile a {position: relative;float: left; width: calc(100% / ' . $sum . ');display:list-item; list-style-type: none;} #social_mobile a:focus, #social_mobile a:hover { width: calc(100% / ' . $sum . ');-moz-transition-property: none; -webkit-transition-property: none; -o-transition-property: none;transition-property: none;}';
+            $document->addStyleDeclaration($mobile); ?>
 			<div id="social_mobile">
 				<div class="top-left">
 					<?php
-					if (trim($params->get('facebook')) == 1)
-					{ ?>
+                    if (trim($params->get('facebook')) == 1) { ?>
 						<a class="facebook pop-upper" href="https://www.facebook.com/<?php echo $params->get('profile_id') ?>" target="_blank">
 							<i class="fab fa-facebook-f"></i>
 						</a>
 					<?php }
-					if (trim($params->get('twitter')) == 1)
-					{ ?>
+            if (trim($params->get('twitter')) == 1) { ?>
 						<a class="twitter pop-upper" href="https://twitter.com/<?php echo $params->get('twitter_login'); ?>" target="_blank">
 							<i class="fab fa-twitter"></i>
 						</a>
 					<?php } ?>
 				</div>
 			</div>
-			<?php 
+			<?php
+        }
 
 #______________________DESKTOP________________________
 
