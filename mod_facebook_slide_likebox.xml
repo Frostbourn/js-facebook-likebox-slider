@@ -7,7 +7,7 @@
     <license>GPL 2.0</license>
     <authorEmail>support@jsns.eu</authorEmail>
     <authorUrl>https://jsns.eu</authorUrl>
-    <version>6.4.0</version>
+    <version>6.5.0</version>
     <description>
         <![CDATA[<div><a title="" href=">https://jakubskowronski.com" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""/></a><br><center><a class="btn btn-small button-apply btn-success" href="https://jsns.eu/plans/joomla-extensions/js-facebook-like-box-slider/sign-up" target="_blank">Remove the copyright url and support our work</a><br></center></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://docs.jsns.eu/" target="_blank" rel="alternate">CLICK</a></li></ul>]]>
     </description>
@@ -28,7 +28,7 @@
         <fields name="params">
             <fieldset name="basic">
               <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix"/>
-                <field name="show_on_mobile" type="radio" class="btn-group"  default="1" label="Show on mobile devices" description="">
+                <field name="show_on_mobile" type="radio" class="btn-group" default="1" label="Show on mobile devices" description="">
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </field>
@@ -37,129 +37,21 @@
                     <option value="0">Right</option>
                 </field>
                 <field name="buttons_shape" type="radio" class="btn-group" default="0" label="Rounded buttons" description="Increase border-radius">
-                    <option value="0">No</option>
                     <option value="1">Yes</option>
+                    <option value="0">No</option>
                 </field>
                 <field name="margintop" type="text" default="10%" label="Margin top" description="Margin top"/>
                 <field type="spacer" name="&lt;div style=&quot;width: 600px; color:#fff; font-size:12px; font-weight:bold; padding:3px; text-align:center; background:#3c95d9;&quot;&gt;Facebook&lt;/div&gt;"/>
-                <field name="facebook" type="list" default="1" label="Display Facebook tab" description="Display Facebook tab">
-                    <option value="0">No</option>
+                <field name="facebook"  type="radio" class="btn-group" default="1" label="Display Facebook tab" description="Display Facebook tab">
                     <option value="1">Yes</option>
+                    <option value="0">No</option>
                 </field>
                 <field type="spacer" name="fbspacer" label="&lt;i&gt;Facebook ID is what comes after the www.facebook.com/ not the whoule URL.&lt;/i&gt;" />
                 <field name="profile_id" type="text" default="JSNetworkSolutions" label="Facebook ID" description="Page ID of the Facebook"/>
-                <!-- <field name="fbLocale" type="list" default="en_GB" label="Facebook Language" description="">
-          <option value="af_ZA">Afrikaans</option>
-          <option value="sq_AL">Albanian</option>
-          <option value="ar_AR">Arabic</option>
-          <option value="hy_AM">Armenian</option>
-          <option value="ay_BO">Aymara</option>
-          <option value="az_AZ">Azeri</option>
-          <option value="eu_ES">Basque</option>
-          <option value="be_BY">Belarusian</option>
-          <option value="bg_BG">Bulgarian</option>
-          <option value="bn_IN">Bengali</option>
-          <option value="bs_BA">Bosnian</option>
-          <option value="ca_ES">Catalan</option>
-          <option value="ck_US">Cherokee</option>
-          <option value="cs_CZ">Czech</option>
-          <option value="hr_HR">Croatian</option>
-          <option value="da_DK">Danish</option>
-          <option value="nl_BE">Dutch (Belgie)</option>
-          <option value="nl_NL">Dutch</option>
-          <option value="en_GB">English (UK)</option>
-          <option value="en_PI">English (Pirate)</option>
-          <option value="en_UD">English (Upside Down)</option>
-          <option value="en_US">English (US)</option>
-          <option value="eo_EO">Esperanto</option>
-          <option value="et_EE">Estonian</option>
-          <option value="fi_FI">Finnish</option>
-          <option value="tl_PH">Filipino</option>
-          <option value="fo_FO">Faroese</option>
-          <option value="fr_CA">French (Canada)</option>
-          <option value="fr_FR">French</option>
-          <option value="ka_GE">Georgian</option>
-          <option value="de_DE">German</option>
-          <option value="el_GR">Greek</option>
-          <option value="gl_ES">Galician</option>
-          <option value="gn_PY">Guarani</option>
-          <option value="gu_IN">Gujarati</option>
-          <option value="he_IL">Hebrew</option>
-          <option value="hi_IN">Hindi</option>
-          <option value="hu_HU">Hungarian</option>
-          <option value="id_ID">Indonesian</option>
-          <option value="is_IS">Icelandic</option>
-          <option value="it_IT">Italian</option>
-          <option value="ga_IE">Irish</option>
-          <option value="ja_JP">Japanese</option>
-          <option value="jv_ID">Javanese</option>
-          <option value="kk_KZ">Kazakh</option>
-          <option value="tl_ST">Klingon</option>
-          <option value="km_KH">Khmer</option>
-          <option value="kn_IN">Kannada</option>
-          <option value="ko_KR">Korean</option>
-          <option value="ku_TR">Kurdish</option>
-          <option value="lv_LV">Latvian</option>
-          <option value="la_VA">Latin</option>
-          <option value="li_NL">Lithuanian</option>
-          <option value="fb_LT">Leet Speak</option>
-          <option value="mg_MG">Malagasy</option>
-          <option value="mk_MK">Macedonian</option>
-          <option value="ml_IN">Malayalam</option>
-          <option value="mn_MN">Mongolian</option>
-          <option value="mr_IN">Marathi</option>
-          <option value="ms_MY">Malay</option>
-          <option value="mt_MT">Maltese</option>
-          <option value="nb_NO">Norwegian (bokmal)</option>
-          <option value="nn_NO">Norwegian (nynorsk)</option>
-          <option value="se_NO">Northern Sami</option>
-          <option value="ne_NP">Nepali</option>
-          <option value="pa_IN">Punjabi</option>
-          <option value="pl_PL">Polish</option>
-          <option value="ps_AF">Pashto</option>
-          <option value="fa_IR">Persian</option>
-          <option value="pt_BR">Portuguese (Brazil)</option>
-          <option value="pt_PT">Portuguese (Portugal)</option>
-          <option value="qu_PE">Quechua</option>
-          <option value="rm_CH">Romansh</option>
-          <option value="ro_RO">Romanian</option>
-          <option value="ru_RU">Russian</option>
-          <option value="sa_IN">Sanskrit</option>
-          <option value="es_CL">Spanish (Chile)</option>
-          <option value="es_CO">Spanish (Colombia)</option>
-          <option value="es_ES">Spanish (Spain)</option>
-          <option value="es_LA">Spanish</option>
-          <option value="es_MX">Spanish (Mexico)</option>
-          <option value="es_VE">Spanish (Venezuela)</option>
-          <option value="sk_SK">Slovak</option>
-          <option value="sl_SI">Slovenian</option>
-          <option value="so_SO">Somali</option>
-          <option value="sr_RS">Serbian</option>
-          <option value="sv_SE">Swedish</option>
-          <option value="sw_KE">Swahili</option>
-          <option value="sy_SY">Syriac</option>
-          <option value="ta_IN">Tamil</option>
-          <option value="te_IN">Telugu</option>
-          <option value="tg_TJ">Tajik</option>
-          <option value="th_TH">Thai</option>
-          <option value="tr_TR">Turkish</option>
-          <option value="tt_RU">Tatar</option>
-          <option value="uk_UA">Ukrainian</option>
-          <option value="ur_PK">Urdu</option>
-          <option value="uz_UZ">Uzbek</option>
-          <option value="cy_GB">Welsh</option>
-          <option value="vi_VN">Vietnamese</option>
-          <option value="xh_ZA">Xhosa</option>
-          <option value="yi_DE">Yiddish</option>
-          <option value="zh_CN">Simplified Chinese (China)</option>
-          <option value="zh_HK">Traditional Chinese (Hong Kong)</option>
-          <option value="zh_TW">Traditional Chinese (Taiwan)</option>
-          <option value="zu_ZA">Zulu</option>
-        </field> -->
                 <field type="spacer" name="&lt;div style=&quot;width: 600px; color:#fff; font-size:12px; font-weight:bold; padding:3px; text-align:center; background:#3c95d9;&quot;&gt;Twitter&lt;/div&gt;"/>
-                <field name="twitter" type="list" default="1" label="Display Twitter tab" description="Display Twitter tab">
-                    <option value="0">No</option>
+                <field name="twitter"  type="radio" class="btn-group" default="1" label="Display Twitter tab" description="Display Twitter tab">
                     <option value="1">Yes</option>
+                    <option value="0">No</option>
                 </field>
                 <field type="spacer" name="twspacer" label="&lt;i&gt;Twitter ID is what comes after the www.twitter.com/ not the whoule URL.&lt;/i&gt;" />
                 <field name="twitter_login" type="text" default="jsnseu" label="Twitter ID" description="Twitter ID i.eg: twitter"/>

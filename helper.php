@@ -104,7 +104,7 @@ class modSlideLikebox {
 							</div>
 						</section>
 				<?php } ?>
-				<a href="https://jsns.eu" title="Joomla Extensions" target="_blank" class="copyrightlink">Joomla Extensions</a>
+				<span class="copyrightlink">Designed with <span style="color: #f44336;">❤</span> by <a title="Projektowanie stron internetowych" target="_blank" href="http://jakubskowronski.com" rel="noopener noreferrer">jakubskowronski.com</a></span>
 			</div>
 <?php
 	}
