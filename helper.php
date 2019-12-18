@@ -14,6 +14,7 @@ class modSlideLikebox {
 			$document = JFactory::getDocument();
 
 #______________________MOBILE________________________
+ 
         if (trim($params->get('show_on_mobile')) == 1) {
             if (trim($params->get('twitter')) == 1) {
                 $t = 1;
@@ -37,15 +38,14 @@ class modSlideLikebox {
 							<i class="fa fa-facebook-f"></i>
 						</a>
 					<?php }
-            if (trim($params->get('twitter')) == 1) { ?>
+            		if (trim($params->get('twitter')) == 1) { ?>
 						<a class="twitter pop-upper" href="https://twitter.com/<?php echo $params->get('twitter_login'); ?>" target="_blank">
 							<i class="fa fa-twitter"></i>
 						</a>
 					<?php } ?>
 				</div>
 			</div>
-			<?php
-        }
+		<?php }
 
 #______________________DESKTOP________________________
 

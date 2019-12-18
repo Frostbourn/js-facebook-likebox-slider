@@ -13,5 +13,4 @@ require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'helper.php');
 
 $slidelikebox = modSlideLikebox::getLikebox( $params );
 require( JModuleHelper::getLayoutPath( 'mod_facebook_slide_likebox' ) );
-
 ?>
