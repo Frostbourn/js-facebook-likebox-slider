@@ -9,7 +9,7 @@
     <authorUrl>https://jakubskowronski.com</authorUrl>
     <version>6.5.6</version>
     <description>
-        <![CDATA[<div><a title="" href=">https://jakubskowronski.com" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""/></a></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://github.com/Frostbourn/js-facebook-likebox-slider/" target="_blank" rel="alternate">CLICK</a></li></ul>]]>
+        <![CDATA[<div><a title="" href="https://jakubskowronski.com" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""></a></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://github.com/Frostbourn/js-facebook-likebox-slider/" target="_blank" rel="alternate">CLICK</a></li></ul>]]>
     </description>
     <files>
         <filename>mod_facebook_slide_likebox.xml</filename>
