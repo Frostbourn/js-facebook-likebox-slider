@@ -13,8 +13,19 @@ class modSlideLikebox {
 			$document = JFactory::getDocument();
 
 #______________________MOBILE________________________
- 
+		
         if (trim($params->get('show_on_mobile')) == 1) {
+
+			$iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+			$iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
+			$Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
+			
+			if ( $iPhone || $iPad ) {
+				$fb_url = 'fb://page/' . $params->get('profile_id');
+			} else if($Android){
+				$fb_url = 'fb://facewebmodal/' . $params->get('profile_id');
+			}
+
             if (trim($params->get('twitter')) == 1) {
                 $t = 1;
             } else {
@@ -27,13 +38,13 @@ class modSlideLikebox {
             }
 
             $sum = $f + $t;
-            $mobile = '#social_mobile a {position: relative;float: left; width: calc(100% / ' . $sum . ');display:list-item; list-style-type: none;} #social_mobile a:focus, #social_mobile a:hover { width: calc(100% / ' . $sum . ');-moz-transition-property: none; -webkit-transition-property: none; -o-transition-property: none;transition-property: none;}';
-            $document->addStyleDeclaration($mobile); ?>
+            $mobile_style = '#social_mobile a {position: relative;float: left; width: calc(100% / ' . $sum . ');display:list-item; list-style-type: none;} #social_mobile a:focus, #social_mobile a:hover { width: calc(100% / ' . $sum . ');-moz-transition-property: none; -webkit-transition-property: none; -o-transition-property: none;transition-property: none;}';
+            $document->addStyleDeclaration($mobile_style); ?>
 			<div id="social_mobile">
 				<div class="top-left">
 					<?php
                     if (trim($params->get('facebook')) == 1) { ?>
-						<a class="facebook pop-upper" href="https://www.facebook.com/<?php echo $params->get('profile_id') ?>" target="_blank">
+						<a class="facebook pop-upper" href="<?php echo $fb_url ?>" target="_blank">
 							<i class="fa fa-facebook-f"></i>
 						</a>
 					<?php }
