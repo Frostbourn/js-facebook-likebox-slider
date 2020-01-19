@@ -21,9 +21,9 @@ class modSlideLikebox {
 			$Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
 			
 			if ( $iPhone || $iPad ) {
-				$fb_url = 'fb://page/' . $params->get('profile_id');
+				$fb_url = 'fb://profile/' . $params->get('profile_id');
 			} else if($Android){
-				$fb_url = 'fb://facewebmodal/' . $params->get('profile_id');
+				$fb_url = 'fb://page/' . $params->get('profile_id');
 			}
 
             if (trim($params->get('twitter')) == 1) {
