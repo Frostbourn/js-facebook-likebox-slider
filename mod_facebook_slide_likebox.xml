@@ -54,14 +54,14 @@
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </field>
-                <field type="spacer" name="fbspacer" label="&lt;i&gt;You can get Facebook ID here: www.findmyfbid.com&lt;/i&gt;" />
+                <field type="spacer" name="fbspacer" label="&lt;i&gt;Get Facebook ID here: www.findmyfbid.com&lt;/i&gt;" />
                 <field name="profile_id" type="text" default="JSNetworkSolutions" label="Facebook ID" description="Page ID of the Facebook"/>
                 <field type="spacer" name="&lt;div style=&quot;width: 600px; color:#fff; font-size:12px; font-weight:bold; padding:3px; text-align:center; background:#3c95d9;&quot;&gt;Twitter&lt;/div&gt;"/>
                 <field name="twitter" type="radio" class="btn-group" default="1" label="Display Twitter tab" description="Display Twitter tab">
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </field>
-                <field type="spacer" name="twspacer" label="&lt;i&gt;Twitter ID is what comes after the www.twitter.com not the whoule URL.&lt;/i&gt;" />
+                <field type="spacer" name="twspacer" label="&lt;i&gt;Twitter ID is what comes after the www.twitter.com/ not the whoule URL.&lt;/i&gt;" />
                 <field name="twitter_login" type="text" default="jsnseu" label="Twitter ID" description="Twitter ID i.eg: twitter"/>
             </fieldset>
         </fields>

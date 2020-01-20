@@ -23,5 +23,5 @@ The visitors can enjoy our plugin on any screen, including Tablets and Mobile De
 Facebook Page plugin only works with pages, not with the personal profiles or groups! First, you’ll need to [retrieve your Facebook page ID](https://findmyfbid.com).
 
 ### Follow these steps to find your Twitter ID 
-* Log in to twitter.com and [visit your account settings page](https://help.twitter.com/en/managing-your-account/change-twitter-handle) to get your ID.
+Log in to twitter.com and [visit your account settings page](https://help.twitter.com/en/managing-your-account/change-twitter-handle) to get your ID.
 
