@@ -27,16 +27,19 @@
 }
 
 .social_slider {
+    background: transparent;
+    float: left;
+    width: 370px;
     box-sizing: content-box !important;
-}
-
-.social_slider i {
-    visibility: hidden;
 }
 
 .social_slider a:hover {
     background-color: transparent;
     text-decoration: none;
+}
+
+.social_slider section:first-of-type {
+    display: block;
 }
 
 .social_slider section {
@@ -56,20 +59,70 @@
     display: block;
 }
 
-.social_slider {
-    background: transparent;
-    float: left;
-    width: 370px;
+.social_slider label:first-of-type {
+    margin-top: 50px;
+}
+
+.social_slider label {
+    overflow: hidden;
+}
+
+.social_slider label span {
+    font-family: 'Poppins', sans-serif;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 4px 0;
+    height: 68px;
+    text-align: center;
+}
+
+.social_slider i {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 9px;
+    position: relative;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    background: rgba(0,0,0,.1);
+}
+
+.social_slider label::before {
+    border-top: 1px solid #f2f2f2;
+}
+
+.social_slider .facebook_icon,
+.social_slider .twitter_icon {
+    width: 32px;
+    height: 115px;
+    cursor: pointer;
+    position: relative;
+    z-index: 99998;
+    display: block;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .social_slider .facebook_box {
     border-radius: 8px;
+    border: 10px solid #3289d9;
     background-color: #fff;
     position: absolute;
     z-index: 99998;
     width: 370px;
     box-sizing: border-box;
-    box-shadow: 6px 5px 20px -6px #888;
+    box-shadow: 0 5px 20px -6px #888;
+}
+
+.social_slider .facebook_icon:hover {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
 }
 
 .social_slider a.active {
@@ -79,17 +132,25 @@
 
 .social_slider .twitter_box {
     border-radius: 8px;
+
+    border: 10px solid #27a4d9;
     position: absolute;
     z-index: 99998;
     background: #fff;
     width: 370px;
     box-sizing: border-box;
-    box-shadow: 6px 5px 20px -6px #888;
+    box-shadow: 0 5px 20px -6px #888;
+}
+
+.social_slider .twitter_icon:hover {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
 }
 
 .social_slider .twitter_box #twitter-widget-0 {
     min-height: 470px !important;
 }
+
 
 /*@keyframes fadeInScale {
     0% {

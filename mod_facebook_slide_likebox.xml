@@ -1,36 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.0" method="upgrade">
-    <name>JS Facebook Likebox Slider</name>
+    <name>JS Like Box Slider</name>
     <author>Jakub Skowroński</author>
     <creationDate>2013-07-15</creationDate>
-    <copyright>Copyright (C) 2010 - https://jakubskowronski.com All rights reserved.</copyright>
+    <copyright>Copyright (C) 2013 - https://jakubskowronski.com All rights reserved.</copyright>
     <license>GPL 2.0</license>
     <authorEmail>kontakt@jakubskowronski.com</authorEmail>
     <authorUrl>https://jakubskowronski.com</authorUrl>
-    <version>6.6.1</version>
+    <version>6.7.0</version>
     <description>
         <![CDATA[<div><a title="" href="https://jakubskowronski.com" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/logo-website.fw.png" alt=""></a><br><br>
         <br><br></div><h3>Troubleshooting</h3><div>1. What is the best position for the module?</div><ul><li>The best positions: debug or footer</li></ul><div>2. How can I find my social channel ID?</div><ul><li>Look at the Documentation here: <a href="https://github.com/Frostbourn/js-facebook-likebox-slider/" target="_blank" rel="alternate">CLICK</a></li></ul>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="HZ5BP4AWYGJ98" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
         ]]>
     </description>
     <files>
         <filename>mod_facebook_slide_likebox.xml</filename>
         <filename module="mod_facebook_slide_likebox">mod_facebook_slide_likebox.php</filename>
         <filename>index.html</filename>
-        <filename>helper.php</filename>
-        <filename>tmpl/default.php</filename>
-        <filename>tmpl/index.html</filename>
-        <folder>tmpl/images/</folder>
-        <folder>tmpl/css/</folder>
+        <folder>tmpl</folder>
     </files>
     <updateservers>
-        <server type="extension" priority="1" name="JS Facebook Slide Likebox">https://jakubskowronski.com/joomla/mod_facebook_slide_likebox/update.xml</server>
+        <server type="extension" priority="1" name="JS Like Box Slider">https://jakubskowronski.com/joomla/mod_facebook_slide_likebox/update.xml</server>
     </updateservers>
     <config>
         <fields name="params">
@@ -55,14 +45,14 @@
                     <option value="0">No</option>
                 </field>
                 <field type="spacer" name="fbspacer" label="&lt;i&gt;Get Facebook ID here: www.findmyfbid.com&lt;/i&gt;" />
-                <field name="profile_id" type="text" default="JSNetworkSolutions" label="Facebook ID" description="Page ID of the Facebook"/>
+                <field name="profile_id" type="text" default="20531316728" label="Facebook ID" description="Page ID of the Facebook"/>
                 <field type="spacer" name="&lt;div style=&quot;width: 600px; color:#fff; font-size:12px; font-weight:bold; padding:3px; text-align:center; background:#3c95d9;&quot;&gt;Twitter&lt;/div&gt;"/>
                 <field name="twitter" type="radio" class="btn-group" default="1" label="Display Twitter tab" description="Display Twitter tab">
                     <option value="1">Yes</option>
                     <option value="0">No</option>
                 </field>
                 <field type="spacer" name="twspacer" label="&lt;i&gt;Twitter ID is what comes after the www.twitter.com/ not the whoule URL.&lt;/i&gt;" />
-                <field name="twitter_login" type="text" default="jsnseu" label="Twitter ID" description="Twitter ID i.eg: twitter"/>
+                <field name="twitter_login" type="text" default="twitter" label="Twitter ID" description="Twitter ID i.eg: twitter"/>
             </fieldset>
         </fields>
     </config>
