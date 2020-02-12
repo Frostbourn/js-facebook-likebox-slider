@@ -43,6 +43,7 @@
 }
 
 .social_slider section {
+    padding: unset;
     display: none;
     height: 100%;
 }
@@ -68,7 +69,6 @@
 }
 
 .social_slider label span {
-    font-family: 'Poppins', sans-serif;
     writing-mode: tb-rl;
     transform: rotate(180deg);
     color: #fff;
@@ -78,19 +78,17 @@
     margin: 10px 4px 0;
     height: 68px;
     text-align: center;
+    -webkit-font-smoothing: antialiased;
 }
 
 .social_slider i {
     display: flex;
     justify-content: center;
-    vertical-align: middle;
+    padding: 25% 25% 25% 25%;
     color: #fff;
-    padding-top: 9px;
     position: relative;
     font-size: 14px;
-    width: 32px;
-    height: 32px;
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
 }
 
 .social_slider label::before {
@@ -117,7 +115,6 @@
     z-index: 99998;
     width: 370px;
     box-sizing: border-box;
-    box-shadow: 0 5px 20px -6px #888;
 }
 
 .social_slider .facebook_icon:hover {
@@ -132,14 +129,12 @@
 
 .social_slider .twitter_box {
     border-radius: 8px;
-
     border: 10px solid #27a4d9;
     position: absolute;
     z-index: 99998;
     background: #fff;
     width: 370px;
     box-sizing: border-box;
-    box-shadow: 0 5px 20px -6px #888;
 }
 
 .social_slider .twitter_icon:hover {

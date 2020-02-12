@@ -1,4 +1,4 @@
-# JS Likebox Slider
+# JS Like Box Slider
 
 Take a look at the [demo](https://jsns.eu).
 
