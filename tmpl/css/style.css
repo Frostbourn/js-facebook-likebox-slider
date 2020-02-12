@@ -43,7 +43,10 @@
 }
 
 .social_slider section {
+<<<<<<< HEAD
     padding: unset;
+=======
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
     display: none;
     height: 100%;
 }
@@ -69,6 +72,10 @@
 }
 
 .social_slider label span {
+<<<<<<< HEAD
+=======
+    font-family: 'Poppins', sans-serif;
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
     writing-mode: tb-rl;
     transform: rotate(180deg);
     color: #fff;
@@ -78,17 +85,31 @@
     margin: 10px 4px 0;
     height: 68px;
     text-align: center;
+<<<<<<< HEAD
     -webkit-font-smoothing: antialiased;
+=======
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
 }
 
 .social_slider i {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     padding: 25% 25% 25% 25%;
     color: #fff;
     position: relative;
     font-size: 14px;
     background: rgba(0, 0, 0, .1);
+=======
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 9px;
+    position: relative;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    background: rgba(0,0,0,.1);
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
 }
 
 .social_slider label::before {
@@ -115,6 +136,10 @@
     z-index: 99998;
     width: 370px;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+    box-shadow: 0 5px 20px -6px #888;
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
 }
 
 .social_slider .facebook_icon:hover {
@@ -129,12 +154,20 @@
 
 .social_slider .twitter_box {
     border-radius: 8px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
     border: 10px solid #27a4d9;
     position: absolute;
     z-index: 99998;
     background: #fff;
     width: 370px;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+    box-shadow: 0 5px 20px -6px #888;
+>>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
 }
 
 .social_slider .twitter_icon:hover {
