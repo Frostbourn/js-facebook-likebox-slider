@@ -108,11 +108,7 @@ class modSlideLikebox
 				<label for="tab1" class="facebook_icon" style="max-width: 32px;"><span>facebook</span><i class="fa fa-facebook-f"></i></label>
 				<section id="content1">
 					<div class="facebook_box">
-<<<<<<< HEAD
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('profile_id'); ?>&tabs=timeline,events,messages&width=350&height=470&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true" width="350" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-=======
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('profile_id'); ?>&tabs=timeline&width=350&height=470&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true" width="350" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
->>>>>>> 9a88f58efb67c4c7e14c75d1d6006c60075be7ea
 						</iframe>
 					</div>
 				</section>
