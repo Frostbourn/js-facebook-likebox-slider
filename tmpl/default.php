@@ -24,7 +24,7 @@ class modSlideLikebox
 		if (trim($params->get('show_on_mobile')) == 1) 
 		{
 			?>
-			<div id="social_mobile">
+			<div class="social_mobile">
 				<div class="top-left">
 				<?php
 					switch(true)
@@ -55,7 +55,7 @@ class modSlideLikebox
 							<?php 
 						default:
 							$sum = $fb + $tw;
-							$mobile_style = '#social_mobile a {position: relative;float: left; width: calc(100% / ' . $sum . ');display:list-item; list-style-type: none;} #social_mobile a:focus, #social_mobile a:hover { width: calc(100% / ' . $sum . ');-moz-transition-property: none; -webkit-transition-property: none; -o-transition-property: none;transition-property: none;}';
+							$mobile_style = '.social_mobile a, .social_mobile a:focus, .social_mobile a:hover { width: calc(100% / ' . $sum . ');}';
 							$document->addStyleDeclaration($mobile_style); 
 						break;
 					} 
@@ -101,7 +101,7 @@ class modSlideLikebox
 							$buttons_shape = '.social_slider .facebook_icon, .social_slider .twitter_icon {border-radius: 0 7px 7px 0 !important;}';
 							$document->addStyleDeclaration($buttons_shape);
 						}
-						$position_left = '.social_slider {position: fixed; left:-370px; z-index:99997; transition: all .5s .2s;}.social_slider:hover{transition: all .5s .2s; transform: translateX(370px);}.social_slider .facebook_icon{float:right;right:-31px; clear: right;}.social_slider .twitter_icon{float:right; clear: right;right:-31px}';
+						$position_left = '.social_slider {left:-370px;}.social_slider:hover{transform: translateX(370px);}.social_slider .facebook_icon{float:right;right:-31px; clear: right;}.social_slider .twitter_icon{float:right; clear: right;right:-31px}';
 						$document->addStyleDeclaration($position_left);
 					} else if (trim($params->get('position')) == 0) 
 					{
@@ -110,7 +110,7 @@ class modSlideLikebox
 							$buttons_shape = '.social_slider .facebook_icon, .social_slider .twitter_icon {border-radius: 7px 0 0 7px !important;}';
 							$document->addStyleDeclaration($buttons_shape);
 						}
-						$position_right = '.social_slider {position: fixed; right:-370px; z-index:99997; transition: all .5s .2s;}.social_slider:hover{transition: all .5s .2s; transform: translateX(-370px);} .social_slider .facebook_icon{float:left;left:-31px; clear: left;}.social_slider .twitter_icon{float:left;left:-31px; clear: left;}';
+						$position_right = '.social_slider {right:-370px;}.social_slider:hover{transform: translateX(-370px);} .social_slider .facebook_icon{float:left;left:-31px; clear: left;}.social_slider .twitter_icon{float:left;left:-31px; clear: left;}';
 						$document->addStyleDeclaration($position_right);
 					} 
 					?>
