@@ -5,26 +5,38 @@
  */
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 
-@fb-bg-color:#3289d9;
-@tw-bg-color:#27a4d9;
+@fb-bg-color: #3289d9;
+@tw-bg-color: #27a4d9;
 @font-color: #fff;
 @tab-width: 370px;
 
 .social_slider {
     width: @tab-width;
+    position: fixed;
+    z-index: 999;
     box-sizing: content-box;
+    transition: all .5s .2s;
+
     @media only screen and (min-device-width:0) and (max-width:768px) {
         display: none;
-        
-    }
-    @media (min-width:768px) {
-        display: block ;
     }
 
+    @media (min-width:768px) {
+        display: block;
+    }
+
+    &:hover {
+        transition: all .5s .2s;
+    }
+    
     a {
         &:hover {
             background-color: transparent;
             text-decoration: none;
+        }
+        &:active {
+            z-index: 99999;
+            position: relative;
         }
     }
 
@@ -89,10 +101,9 @@
         background: fade(#000000, 10%);
     }
 
-    .facebook_icon {
+    .icon() {
         width: 32px;
         height: 115px;
-        background-color: @fb-bg-color;
         cursor: pointer;
         position: relative;
         z-index: 99998;
@@ -104,48 +115,42 @@
             -webkit-transform: scale(1.07);
             transform: scale(1.07);
         }
+    }
+
+    .facebook_icon {
+        .icon;
+
+        background-color: @fb-bg-color;
     }
 
     .twitter_icon {
-        width: 32px;
-        height: 115px;
-        background-color: @tw-bg-color;
-        cursor: pointer;
-        position: relative;
-        z-index: 99998;
-        display: block;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+        .icon;
 
-        &:hover {
-            -webkit-transform: scale(1.07);
-            transform: scale(1.07);
-        }
+        background-color: @tw-bg-color;
+
+    }
+
+    .box() {    
+        border-radius: 8px;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 99998;
     }
 
     .facebook_box {
-        border-radius: 8px;
+        .box;
+
         border: 10px solid @fb-bg-color;
         background-color: @font-color;
-        position: absolute;
-        z-index: 99998;
         width: @tab-width;
-        box-sizing: border-box;
-    }
-
-    a.active {
-        z-index: 99999;
-        position: relative;
     }
 
     .twitter_box {
-        border-radius: 8px;
-        border: 10px solid @tw-bg-color;;
-        position: absolute;
-        z-index: 99998;
+        .box;
+        
+        border: 10px solid @tw-bg-color;
         background: @font-color;
         width: @tab-width;
-        box-sizing: border-box;
 
         #twitter-widget-0 {
             min-height: 470px !important;
@@ -165,7 +170,7 @@
     }
 }
 
-#social_mobile {
+.social_mobile {
     position: relative;
     z-index: 10000;
 
@@ -178,6 +183,7 @@
     }
 
     a {
+        float: left;
         position: relative;
         width: 48px;
         height: 48px;
@@ -199,10 +205,9 @@
             transition-property: width;
             transition-timing-function: ease-in-out;
         }
-    }
-
-    a.titleText {
-        display: none;
+        &.titleText {
+            display: none;
+        }
     }
 
     i {
@@ -226,7 +231,8 @@
         background-color: @fb-bg-color;
 
         &:hover {
-            background-color: darken(@fb-bg-color, 10%);;
+            background-color: darken(@fb-bg-color, 10%);
+            ;
         }
     }
 
