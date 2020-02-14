@@ -1,0 +1,240 @@
+/**
+ * JS Social Tabs Slider
+ * @license    GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ * @link       https://jsns.eu
+ */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+
+@fb-bg-color:#3289d9;
+@tw-bg-color:#27a4d9;
+@font-color: #fff;
+@tab-width: 370px;
+
+.social_slider {
+    width: @tab-width;
+    box-sizing: content-box;
+    @media only screen and (min-device-width:0) and (max-width:768px) {
+        display: none;
+        
+    }
+    @media (min-width:768px) {
+        display: block ;
+    }
+
+    a {
+        &:hover {
+            background-color: transparent;
+            text-decoration: none;
+        }
+    }
+
+    section {
+        &:first-of-type {
+            display: block;
+        }
+
+        padding: unset;
+        display: none;
+        height: 100%;
+    }
+
+    input[type="radio"] {
+        display: none !important;
+    }
+
+    #tab1 {
+        &:checked~label~#content1 {
+            display: block;
+        }
+    }
+
+    #tab2 {
+        &:checked~label~#content2 {
+            display: block;
+        }
+    }
+
+    label {
+        &:first-of-type {
+            margin-top: 50px;
+        }
+
+        overflow: hidden;
+
+        span {
+            writing-mode: tb-rl;
+            transform: rotate(180deg);
+            color: @font-color;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            margin: 10px 4px 0;
+            height: 68px;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        &::before {
+            border-top: 1px solid #f2f2f2;
+        }
+    }
+
+    i {
+        display: flex;
+        justify-content: center;
+        padding: 25% 25% 25% 25%;
+        color: @font-color;
+        position: relative;
+        font-size: 14px;
+        background: fade(#000000, 10%);
+    }
+
+    .facebook_icon {
+        width: 32px;
+        height: 115px;
+        background-color: @fb-bg-color;
+        cursor: pointer;
+        position: relative;
+        z-index: 99998;
+        display: block;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+
+        &:hover {
+            -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+        }
+    }
+
+    .twitter_icon {
+        width: 32px;
+        height: 115px;
+        background-color: @tw-bg-color;
+        cursor: pointer;
+        position: relative;
+        z-index: 99998;
+        display: block;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+
+        &:hover {
+            -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+        }
+    }
+
+    .facebook_box {
+        border-radius: 8px;
+        border: 10px solid @fb-bg-color;
+        background-color: @font-color;
+        position: absolute;
+        z-index: 99998;
+        width: @tab-width;
+        box-sizing: border-box;
+    }
+
+    a.active {
+        z-index: 99999;
+        position: relative;
+    }
+
+    .twitter_box {
+        border-radius: 8px;
+        border: 10px solid @tw-bg-color;;
+        position: absolute;
+        z-index: 99998;
+        background: @font-color;
+        width: @tab-width;
+        box-sizing: border-box;
+
+        #twitter-widget-0 {
+            min-height: 470px !important;
+        }
+    }
+
+    .copyrightlink {
+        display: block;
+        position: absolute;
+        background: transparent;
+        color: #b9b9b9;
+        font-size: 10px;
+        margin: 500px 15px;
+        text-decoration: none;
+        text-shadow: none !important;
+        text-align: left;
+    }
+}
+
+#social_mobile {
+    position: relative;
+    z-index: 10000;
+
+    @media only screen and (min-device-width:0) and (max-width:768px) {
+        display: inline !important;
+    }
+
+    @media (min-width:768px) {
+        display: none !important;
+    }
+
+    a {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        line-height: 24px;
+        display: list-item;
+        list-style-type: none;
+        padding: 5px 0;
+        text-align: center;
+        color: @font-color;
+        transition-duration: 0.5s;
+        transition-property: width;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            outline: 0 none !important;
+            color: @font-color;
+            width: 55px;
+            transition-duration: 0.5s !important;
+            transition-property: width;
+            transition-timing-function: ease-in-out;
+        }
+    }
+
+    a.titleText {
+        display: none;
+    }
+
+    i {
+        line-height: inherit;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 10px;
+        color: @font-color;
+    }
+
+    .top-left {
+        position: fixed;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .facebook {
+        background-color: @fb-bg-color;
+
+        &:hover {
+            background-color: darken(@fb-bg-color, 10%);;
+        }
+    }
+
+    .twitter {
+        background-color: @tw-bg-color;
+
+        &:hover {
+            background-color: darken(@tw-bg-color, 10%);
+        }
+    }
+}
