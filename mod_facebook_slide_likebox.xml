@@ -17,13 +17,10 @@
         ]]>
     </description>
     <files>
-        <filename>mod_facebook_slide_likebox.xml</filename>
         <filename module="mod_facebook_slide_likebox">mod_facebook_slide_likebox.php</filename>
-        <filename>index.html</filename>
-        <folder>tmpl/default.php</folder>
-        <folder>tmpl/index.html</folder>
-        <folder>tmpl/css/style.min.css</folder>
-        <folder>tmpl/css/index.html</folder>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/css/style.min.css</filename>
+        <filename>mod_facebook_slide_likebox.xml</filename>
     </files>
     <updateservers>
         <server type="extension" priority="1" name="JS Like Box Slider">https://jakubskowronski.com/joomla/mod_facebook_slide_likebox/update.xml</server>
