@@ -4,7 +4,6 @@
  * @link       https://jsns.eu
  */
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
-
 .social_slider {
   width: 370px;
   position: fixed;
@@ -12,90 +11,74 @@
   box-sizing: content-box;
   transition: all 0.5s 0.2s;
 }
-
 @media only screen and (min-device-width: 0) and (max-width: 768px) {
   .social_slider {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
   .social_slider {
     display: block;
   }
 }
-
 .social_slider:hover {
   transition: all 0.5s 0.2s;
 }
-
 .social_slider a:hover {
   background-color: transparent;
   text-decoration: none;
 }
-
 .social_slider a:active {
   z-index: 99999;
   position: relative;
 }
-
 .social_slider section {
   padding: unset;
   display: none;
   height: 100%;
 }
-
 .social_slider section:first-of-type {
   display: block;
 }
-
 .social_slider input[type="radio"] {
   display: none !important;
 }
-
-.social_slider #tab1:checked~label~#content1 {
+.social_slider #tab1:checked ~ label ~ #content1 {
   display: block;
 }
-
-.social_slider #tab2:checked~label~#content2 {
+.social_slider #tab2:checked ~ label ~ #content2 {
   display: block;
 }
-
 .social_slider label {
   overflow: hidden;
 }
-
 .social_slider label:first-of-type {
   margin-top: 50px;
 }
-
 .social_slider label span {
+  height: 68px;
+  color: #fff;
+  margin: 10px 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
   writing-mode: tb-rl;
   transform: rotate(180deg);
-  color: #fff;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 10px 4px 0;
-  height: 68px;
-  text-align: center;
   -webkit-font-smoothing: antialiased;
 }
-
 .social_slider label::before {
   border-top: 1px solid #f2f2f2;
 }
-
 .social_slider i {
   display: flex;
   justify-content: center;
-  padding: 25% 25% 25% 25%;
+  padding: 25%;
   color: #fff;
   position: relative;
   font-size: 14px;
   background: rgba(0, 0, 0, 0.1);
 }
-
 .social_slider .facebook_icon {
   width: 32px;
   height: 115px;
@@ -107,12 +90,10 @@
   transition: all 0.2s ease;
   background-color: #3289d9;
 }
-
 .social_slider .facebook_icon:hover {
   -webkit-transform: scale(1.07);
   transform: scale(1.07);
 }
-
 .social_slider .twitter_icon {
   width: 32px;
   height: 115px;
@@ -124,12 +105,10 @@
   transition: all 0.2s ease;
   background-color: #27a4d9;
 }
-
 .social_slider .twitter_icon:hover {
   -webkit-transform: scale(1.07);
   transform: scale(1.07);
 }
-
 .social_slider .facebook_box {
   border-radius: 8px;
   position: absolute;
@@ -139,7 +118,6 @@
   background-color: #fff;
   width: 370px;
 }
-
 .social_slider .twitter_box {
   border-radius: 8px;
   position: absolute;
@@ -149,11 +127,9 @@
   background: #fff;
   width: 370px;
 }
-
 .social_slider .twitter_box #twitter-widget-0 {
   min-height: 470px !important;
 }
-
 .social_slider .copyrightlink {
   display: block;
   position: absolute;
@@ -165,24 +141,20 @@
   text-shadow: none !important;
   text-align: left;
 }
-
 .social_mobile {
   position: relative;
   z-index: 10000;
 }
-
 @media only screen and (min-device-width: 0) and (max-width: 768px) {
   .social_mobile {
     display: inline !important;
   }
 }
-
 @media (min-width: 768px) {
   .social_mobile {
     display: none !important;
   }
 }
-
 .social_mobile a {
   float: left;
   position: relative;
@@ -198,7 +170,6 @@
   transition-property: width;
   transition-timing-function: ease-in-out;
 }
-
 .social_mobile a:hover {
   outline: 0 none !important;
   color: #fff;
@@ -207,11 +178,9 @@
   transition-property: width;
   transition-timing-function: ease-in-out;
 }
-
 .social_mobile a.titleText {
   display: none;
 }
-
 .social_mobile i {
   line-height: inherit;
   font-size: 24px;
@@ -219,7 +188,6 @@
   margin-top: 10px;
   color: #fff;
 }
-
 .social_mobile .top-left {
   position: fixed;
   left: 0;
@@ -228,19 +196,15 @@
   width: 100%;
   z-index: 999;
 }
-
 .social_mobile .facebook {
   background-color: #3289d9;
 }
-
 .social_mobile .facebook:hover {
   background-color: #226fb6;
 }
-
 .social_mobile .twitter {
   background-color: #27a4d9;
 }
-
 .social_mobile .twitter:hover {
   background-color: #1f84ae;
 }
