@@ -38,11 +38,14 @@ class modSlideLikebox
 						if ($iPhone || $iPad) 
 						{
 							$fb_url = 'fb://profile/' . $facebook_id;
-						} else if ($Android) {
-							$fb_url = 'fb://page/' . $facebook_id;
+						} else {
+							if ($Android) 
+							{
+								$fb_url = 'fb://page/' . $facebook_id;
+							}
 						}
 							?>
-							<a class="facebook pop-upper" href="<?php echo $fb_url ?>" target="_blank">
+							<a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
 								<i class="fa fa-facebook-f"></i>
 							</a>
 							<?php 
@@ -51,7 +54,7 @@ class modSlideLikebox
 					{
 						$sum++;
 						?>
-						<a class="twitter pop-upper" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
+						<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
 							<i class="fa fa-twitter"></i>
 						</a>
 						<?php 
@@ -103,15 +106,18 @@ class modSlideLikebox
 				}
 				$position_left = '.social_slider {left:-370px;}.social_slider:hover{transform: translateX(370px);}.social_slider .facebook_icon{float:right;right:-31px; clear: right;}.social_slider .twitter_icon{float:right; clear: right;right:-31px}';
 				$document->addStyleDeclaration($position_left);
-			} else if (trim($params->get('position')) == 0) 
+			} else 
 			{
-				if (trim($params->get('buttons_shape')) == 1) 
+				if (trim($params->get('position')) == 0) 
 				{
-					$buttons_shape = '.social_slider .facebook_icon, .social_slider .twitter_icon {border-radius: 7px 0 0 7px !important;}';
-					$document->addStyleDeclaration($buttons_shape);
+					if (trim($params->get('buttons_shape')) == 1) 
+					{
+						$buttons_shape = '.social_slider .facebook_icon, .social_slider .twitter_icon {border-radius: 7px 0 0 7px !important;}';
+						$document->addStyleDeclaration($buttons_shape);
+					}
+					$position_right = '.social_slider {right:-370px;}.social_slider:hover{transform: translateX(-370px);} .social_slider .facebook_icon{float:left;left:-31px; clear: left;}.social_slider .twitter_icon{float:left;left:-31px; clear: left;}';
+					$document->addStyleDeclaration($position_right);
 				}
-				$position_right = '.social_slider {right:-370px;}.social_slider:hover{transform: translateX(-370px);} .social_slider .facebook_icon{float:left;left:-31px; clear: left;}.social_slider .twitter_icon{float:left;left:-31px; clear: left;}';
-				$document->addStyleDeclaration($position_right);
 			} 
 			?>
 			<div class="copyrightlink">Designed with 
