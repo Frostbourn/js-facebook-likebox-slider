@@ -38,7 +38,9 @@ class modSlideLikebox
 						if ($iPhone || $iPad) 
 						{
 							$fb_url = 'fb://profile/' . $facebook_id;
-						} else {
+						} 
+						else 
+						{
 							if ($Android) 
 							{
 								$fb_url = 'fb://page/' . $facebook_id;
@@ -106,7 +108,8 @@ class modSlideLikebox
 				}
 				$position_left = '.social_slider {left:-370px;}.social_slider:hover{transform: translateX(370px);}.social_slider .facebook_icon{float:right;right:-31px; clear: right;}.social_slider .twitter_icon{float:right; clear: right;right:-31px}';
 				$document->addStyleDeclaration($position_left);
-			} else 
+			} 
+			else 
 			{
 				if (trim($params->get('position')) == 0) 
 				{
