@@ -3,7 +3,7 @@
  * @license    GNU/GPL http://www.gnu.org/copyleft/gpl.html
  * @link       https://jsns.eu
  */
- 
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 .social_slider {
   width: 370px;
   position: fixed;
@@ -74,6 +74,7 @@
   display: flex;
   justify-content: center;
   padding: 25%;
+  height: 100%;
   color: #fff;
   position: relative;
   font-size: 14px;
@@ -103,6 +104,7 @@
   display: block;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  margin-top: 10px;
   background-color: #27a4d9;
 }
 .social_slider .twitter_icon:hover {
