@@ -16,10 +16,16 @@ class modSlideLikebox
 	{
 		global $mainframe;
 		$document = JFactory::getDocument();
-		$document->addStyleSheet(JURI::root() . 'modules/mod_facebook_slide_likebox/tmpl/css/style.min' . '.css', 'text/css', null, array());
+		
 		$facebook_id = $params->get('facebook_login');
 		$twitter_id =  $params->get('twitter_login');
+		$font_awesome_cdn = $params->get('fa_cdn');
 
+		$document->addStyleSheet(JURI::root() . 'modules/mod_facebook_slide_likebox/tmpl/css/style.min' . '.css', 'text/css', null, array());
+		if ($font_awesome_cdn == 1) {
+			$document->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+		}
+		
 		#______________________MOBILE________________________
 		if (trim($params->get('show_on_mobile')) == 1) 
 		{
