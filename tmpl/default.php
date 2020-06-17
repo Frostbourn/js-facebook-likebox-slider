@@ -23,7 +23,7 @@ class modSlideLikebox
 
 		$document->addStyleSheet(JURI::root() . 'modules/mod_facebook_slide_likebox/tmpl/css/style.min' . '.css', 'text/css', null, array());
 		if ($font_awesome_cdn == 1) {
-			$document->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+			$document->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 		}
 		
 		#______________________MOBILE________________________
