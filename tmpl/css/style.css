@@ -9,7 +9,7 @@
   position: fixed;
   z-index: 999;
   box-sizing: content-box;
-  transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s; 
 }
 @media only screen and (min-device-width: 0) and (max-width: 768px) {
   .social_slider {
@@ -74,6 +74,7 @@
   display: flex;
   justify-content: center;
   padding: 25%;
+  bottom: 0;
   height: 100%;
   color: #fff;
   position: relative;
