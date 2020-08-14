@@ -37,23 +37,23 @@ class modSlideLikebox
 					if (!empty($facebook_id))
 					{
 						$sum++;
-						$iPhone  = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
-						$iPad    = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
-						$Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
+						// $iPhone  = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
+						// $iPad    = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
+						// $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
 			
-						if ($iPhone || $iPad) 
-						{
-							$fb_url = 'fb://profile/' . $facebook_id;
-						} 
-						else 
-						{
-							if ($Android) 
-							{
-								$fb_url = 'fb://page/' . $facebook_id;
-							}
-						}
+						// if ($iPhone || $iPad) 
+						// {
+						// 	$fb_url = 'fb://profile/' . $facebook_id;
+						// } 
+						// else 
+						// {
+						// 	if ($Android) 
+						// 	{
+						// 		$fb_url = 'fb://page/' . $facebook_id;
+						// 	}
+						// }
 							?>
-							<a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
+							<a class="facebook" href="fb://facewebmodal/f?href=https://www.facebook.com/<?php echo $facebook_id ?>" target="_blank">
 								<i class="fa fa-facebook-f"></i>
 							</a>
 							<?php 
