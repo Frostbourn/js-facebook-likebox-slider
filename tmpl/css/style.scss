@@ -2,16 +2,15 @@
  * JS Social Tabs Slider
  * @license    GNU/GPL http://www.gnu.org/copyleft/gpl.html
  * @link       https://jsns.eu
- */
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+ */ 
 
-@fb-bg-color: #3289d9;
-@tw-bg-color: #27a4d9;
-@font-color: #fff;
-@tab-width: 370px;
+$fb-bg-color: #3289d9;
+$tw-bg-color: #27a4d9;
+$font-color: #fff;
+$tab-width: 370px;
 
 .social_slider {
-    width: @tab-width;
+    width: $tab-width;
     position: fixed;
     z-index: 999;
     box-sizing: content-box;
@@ -77,7 +76,7 @@
 
         span {
             height: 68px;
-            color: @font-color;
+            color: $font-color;
             margin: 10px 4px 0;
             font-size: 14px;
             font-weight: 600;
@@ -94,18 +93,20 @@
     }
 
     i {
+        width: 33px;
+        height: 30px;
         display: flex;
         justify-content: center;
-        padding: 25%;
+        align-items: center;
+        padding: unset;
         bottom: 0;
-        height: 100%;
-        color: @font-color;
+        color: $font-color;
         position: relative;
         font-size: 14px;
         background: fade(#000000, 10%);
     }
 
-    .icon() {
+    .icon {
         width: 32px;
         height: 115px;
         cursor: pointer;
@@ -122,20 +123,20 @@
     }
 
     .facebook_icon {
-        .icon;
+        @extend .icon;
 
-        background-color: @fb-bg-color;
+        background-color: $fb-bg-color;
     }
 
     .twitter_icon {
-        .icon;
+        @extend .icon;
 
         margin-top: 10px;
-        background-color: @tw-bg-color;
+        background-color: $tw-bg-color;
 
     }
 
-    .box() {
+    .box {
         border-radius: 8px;
         position: absolute;
         box-sizing: border-box;
@@ -143,19 +144,19 @@
     }
 
     .facebook_box {
-        .box;
+        @extend .box;
 
-        border: 10px solid @fb-bg-color;
-        background-color: @font-color;
-        width: @tab-width;
+        border: 10px solid $fb-bg-color;
+        background-color: $font-color;
+        width: $tab-width;
     }
 
     .twitter_box {
-        .box;
+        @extend .box;
 
-        border: 10px solid @tw-bg-color;
-        background: @font-color;
-        width: @tab-width;
+        border: 10px solid $tw-bg-color;
+        background: $font-color;
+        width: $tab-width;
 
         #twitter-widget-0 {
             min-height: 470px !important;
@@ -197,14 +198,14 @@
         list-style-type: none;
         padding: 5px 0;
         text-align: center;
-        color: @font-color;
+        color: $font-color;
         transition-duration: 0.5s;
         transition-property: width;
         transition-timing-function: ease-in-out;
 
         &:hover {
             outline: 0 none !important;
-            color: @font-color;
+            color: $font-color;
             width: 55px;
             transition-duration: 0.5s !important;
             transition-property: width;
@@ -221,7 +222,7 @@
         font-size: 24px;
         text-align: center;
         margin-top: 10px;
-        color: @font-color;
+        color: $font-color;
     }
 
     .top-left {
@@ -234,19 +235,19 @@
     }
 
     .facebook {
-        background-color: @fb-bg-color;
+        background-color: $fb-bg-color;
 
         &:hover {
-            background-color: darken(@fb-bg-color, 10%);
+            background-color: darken($fb-bg-color, 10%);
             ;
         }
     }
 
     .twitter {
-        background-color: @tw-bg-color;
+        background-color: $tw-bg-color;
 
         &:hover {
-            background-color: darken(@tw-bg-color, 10%);
+            background-color: darken($tw-bg-color, 10%);
         }
     }
 }
