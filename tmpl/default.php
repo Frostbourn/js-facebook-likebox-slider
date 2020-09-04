@@ -51,7 +51,7 @@ class modSlideLikebox
 						}
 							?>
 							<a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
-								<i class="fa fa-facebook-f"></i>
+								<i class="fab fa-facebook-f"></i>
 							</a>
 							<?php 
 					}
@@ -60,7 +60,7 @@ class modSlideLikebox
 						$sum++;
 						?>
 						<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
-							<i class="fa fa-twitter"></i>
+							<i class="fab fa-twitter"></i>
 						</a>
 						<?php 
 					}
@@ -80,7 +80,7 @@ class modSlideLikebox
 			{
 				?>
 				<input id="tab1" type="radio" name="tabs" checked />
-				<label for="tab1" class="facebook_icon" style="max-width: 32px;"><span>facebook</span><i class="fa fa-facebook-f"></i></label>
+				<label for="tab1" class="facebook_icon" style="max-width: 32px;"><span>facebook</span><i class="fab fa-facebook-f"></i></label>
 				<section id="content1">
 					<div class="facebook_box">
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline,events,messages&width=350&height=470&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true" width="350" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
@@ -93,7 +93,7 @@ class modSlideLikebox
 			{
 				?>
 				<input id="tab2" type="radio" name="tabs" />
-				<label for="tab2" class="twitter_icon" style="max-width: 32px;"><span>twitter</span><i class="fa fa-twitter"></i></label>
+				<label for="tab2" class="twitter_icon" style="max-width: 32px;"><span>twitter</span><i class="fab fa-twitter"></i></label>
 				<section id="content2">
 					<div class="twitter_box">
 						<a class="twitter-timeline" data-width="350" data-height="470" href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
