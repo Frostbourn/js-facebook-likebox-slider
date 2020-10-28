@@ -30,9 +30,9 @@ class modSlideLikebox
 		if (trim($params->get('show_on_mobile')) == 1) 
 		{
 			?>
-			<div class="social_mobile">
-				<div class="top-left">
-				<?php
+<div class="social_mobile">
+    <div class="top-left">
+        <?php
 					$sum = 0;
 					if (!empty($facebook_id))
 					{
@@ -50,57 +50,63 @@ class modSlideLikebox
 							$fb_url = 'https://facebook.com/' . $facebook_id;
 						}
 							?>
-							<a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-							<?php 
+        <a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <?php 
 					}
 					if (!empty($twitter_id))
 					{
 						$sum++;
 						?>
-						<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<?php 
+        <a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <?php 
 					}
 						$mobile_style = '.social_mobile a, .social_mobile a:focus, .social_mobile a:hover { width: calc(100% / ' . $sum . ');}';
 						$document->addStyleDeclaration($mobile_style); 
 				?>
-				</div>
-			</div>
-			<?php 
+    </div>
+</div>
+<?php 
 		}
 
 		#______________________DESKTOP________________________
 		?>
-		<div class="social_slider" style="top: <?php echo $params->get('margintop') ?> !important;">
-		<?php
+<div class="social_slider" style="top: <?php echo $params->get('margintop') ?> !important;">
+    <?php
 			if (!empty($facebook_id))
 			{
 				?>
-				<input id="tab1" type="radio" name="tabs" checked />
-				<label for="tab1" class="facebook_icon" style="max-width: 32px;"><span>facebook</span><i class="fab fa-facebook-f"></i></label>
-				<section id="content1">
-					<div class="facebook_box">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline,events,messages&width=350&height=470&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true" width="350" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-						</iframe>
-					</div>
-				</section>
-				<?php 
+    <input id="tab1" type="radio" name="tabs" checked />
+    <label for="tab1" class="facebook_icon" style="max-width: 32px;"><span>facebook</span><i
+            class="fab fa-facebook-f"></i></label>
+    <section id="content1">
+        <div class="facebook_box">
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline,events,messages&width=350&height=470&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true"
+                width="350" height="470" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowTransparency="true">
+            </iframe>
+        </div>
+    </section>
+    <?php 
 			}
 			if (!empty($twitter_id))
 			{
 				?>
-				<input id="tab2" type="radio" name="tabs" />
-				<label for="tab2" class="twitter_icon" style="max-width: 32px;"><span>twitter</span><i class="fab fa-twitter"></i></label>
-				<section id="content2">
-					<div class="twitter_box">
-						<a class="twitter-timeline" data-width="350" data-height="470" href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
-						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-				</section>
-				<?php
+    <input id="tab2" type="radio" name="tabs" />
+    <label for="tab2" class="twitter_icon" style="max-width: 32px;"><span>twitter</span><i
+            class="fab fa-twitter"></i></label>
+    <section id="content2">
+        <div class="twitter_box">
+            <a class="twitter-timeline" data-width="350" data-height="470"
+                href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
+    <?php
 			}
 			if (trim($params->get('position')) == 1) 
 			{
@@ -126,13 +132,16 @@ class modSlideLikebox
 				}
 			} 
 			?>
-			<div class="copyrightlink">Designed with 
-				<span style="color: #f44336;">❤</span> by 
-				<a title="Joomla Extensions" target="_blank" href="https://jsns.eu" rel="noopener noreferrer">jsns.eu</a>
-				</div>
-			</div>
-		</div>
-		<?php		
+    <script>
+    var s =
+        "=ejw!dmbtt>#dpqzsjhiumjol#?Eftjhofe!cz!!!!!!!!=b!ujumf>#Kppnmb!Fyufotjpot#!ubshfu>#`cmbol#!isfg>#iuuqt;00ktot/fv#!sfm>#oppqfofs#?ktot/fv=0b?!!!!=0ejw?";
+    var m = "";
+    for (var i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
+    document.write(m);
+    </script>
+</div>
+</div>
+<?php		
 	}
 }
 ?>
