@@ -132,13 +132,11 @@ class modSlideLikebox
 				}
 			} 
 			?>
-    <script>
-    var s =
-        "=ejw!dmbtt>#dpqzsjhiumjol#?Eftjhofe!cz!!!!!!!!=b!ujumf>#Kppnmb!Fyufotjpot#!ubshfu>#`cmbol#!isfg>#iuuqt;00ktot/fv#!sfm>#oppqfofs#?ktot/fv=0b?!!!!=0ejw?";
-    var m = "";
-    for (var i = 0; i < s.length; i++) m += String.fromCharCode(s.charCodeAt(i) - 1);
-    document.write(m);
-    </script>
+    <div class="copyrightlink">Designed with
+        <span style="color: #f44336;">❤</span> by
+        <a title="Joomla Extensions" target="_blank" href="https://jsns.eu" rel="noopener">jsns.eu</a>
+    </div>
+</div>
 </div>
 </div>
 <?php		
