@@ -43,8 +43,11 @@ class modSlideLikebox
 			
 						if ($iPhone || $iPad || $Android) 
 						{
-							$fb_url = 'fb://facewebmodal/f?href=https://www.facebook.com/' . $facebook_id;
+							$fb_url = 'fb://profile/' . $facebook_id;
 						} 
+						else if ($Android) {
+							$fb_url = 'fb://page/' . $facebook_id;
+						}
 						else 
 						{
 							$fb_url = 'https://facebook.com/' . $facebook_id;
