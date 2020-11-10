@@ -41,7 +41,7 @@ class modSlideLikebox
 						$iPad    = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
 						$Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
 			
-						if ($iPhone || $iPad || $Android) 
+						if ($iPhone || $iPad) 
 						{
 							$fb_url = 'fb://profile/' . $facebook_id;
 						} 
