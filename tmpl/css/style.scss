@@ -95,6 +95,7 @@ $tab-width: 370px;
     }
 
     i {
+        position: absolute;
         width: 33px;
         height: 30px;
         display: flex;
@@ -103,7 +104,6 @@ $tab-width: 370px;
         padding: unset;
         bottom: 0;
         color: $font-color;
-        position: relative;
         font-size: 14px;
         background: #0000001a;
     }
