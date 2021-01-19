@@ -88,8 +88,8 @@ class modSlideLikebox
 	<section id="content1">
 		<div class="facebook_box">
 			<iframe
-				src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-				width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+				src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+				width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
 				allowfullscreen="true"
 				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
 			</iframe>
@@ -105,7 +105,7 @@ class modSlideLikebox
 			class="fab fa-twitter"></i></label>
 	<section id="content2">
 		<div class="twitter_box">
-			<a class="twitter-timeline" data-width="350" data-height="470"
+			<a class="twitter-timeline" data-width="350" data-height="500"
 				href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
 			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
