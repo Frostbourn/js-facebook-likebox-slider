@@ -55,14 +55,14 @@ $tab-height: 520px;
         display: none !important;
     }
 
-    #tabOne {
-        &:checked~label~#content1 {
+    #facebookTab {
+        &:checked~label~#facebookContent {
             display: block;
         }
     }
 
-    #tabTwo {
-        &:checked~label~#content2 {
+    #twitterTab {
+        &:checked~label~#twitterContent {
             display: block;
         }
     }

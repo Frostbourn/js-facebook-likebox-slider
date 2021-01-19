@@ -82,12 +82,12 @@ class modSlideLikebox
 			if (!empty($facebook_id))
 			{
 				?>
-				<input id="tabOne" type="radio" name="tabs" checked />
-				<label for="tabOne" class="facebook_icon" style="max-width: 32px;">
+				<input id="facebookTab" type="radio" name="tabs" checked />
+				<label for="facebookTab" class="facebook_icon" style="max-width: 32px;">
 					<span>facebook</span>
 					<i class="fab fa-facebook-f"></i>
 				</label>
-				<section id="contentOne">
+				<section id="facebookContent">
 					<div class="facebook_box">
 						<iframe
 							src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
@@ -102,12 +102,12 @@ class modSlideLikebox
 			if (!empty($twitter_id))
 			{
 				?>
-				<input id="tabTwo" type="radio" name="tabs" />
-				<label for="tabTwo" class="twitter_icon" style="max-width: 32px;">
+				<input id="twitterTab" type="radio" name="tabs" />
+				<label for="twitterTab" class="twitter_icon" style="max-width: 32px;">
 					<span>twitter</span>
 					<i class="fab fa-twitter"></i>
 				</label>
-				<section id="contentTwo">
+				<section id="twitterContent">
 					<div class="twitter_box">
 						<a class="twitter-timeline" data-width="350" data-height="500"
 							href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
