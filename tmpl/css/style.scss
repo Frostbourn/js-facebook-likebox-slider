@@ -10,7 +10,7 @@ $font-color: #fff;
 $tab-width: 370px;
 $tab-height: 520px;
 
-.social_slider {
+.jssocial_desktop_view {
     width: $tab-width;
     position: fixed;
     z-index: 999;
@@ -55,13 +55,13 @@ $tab-height: 520px;
         display: none !important;
     }
 
-    #tab1 {
+    #tabOne {
         &:checked~label~#content1 {
             display: block;
         }
     }
 
-    #tab2 {
+    #tabTwo {
         &:checked~label~#content2 {
             display: block;
         }
@@ -177,7 +177,7 @@ $tab-height: 520px;
     }
 }
 
-.social_mobile {
+.jssocial_mobile_view {
     position: relative;
     z-index: 10000;
 
@@ -226,7 +226,7 @@ $tab-height: 520px;
         color: $font-color;
     }
 
-    .top-left {
+    .buttons-container {
         position: fixed;
         left: 0;
         top: auto;

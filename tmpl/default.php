@@ -30,9 +30,9 @@ class modSlideLikebox
 		if (trim($params->get('show_on_mobile')) == 1) 
 		{
 			?>
-<div class="social_mobile">
-	<div class="top-left">
-		<?php
+			<div class="jssocial_mobile_view">
+				<div class="buttons_container">
+				<?php
 					$sum = 0;
 					if (!empty($facebook_id))
 					{
@@ -52,74 +52,78 @@ class modSlideLikebox
 						{
 							$fb_url = 'https://facebook.com/' . $facebook_id;
 						}
-							?>
-		<a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
-			<i class="fab fa-facebook-f"></i>
-		</a>
-		<?php 
+						?>
+						<a class="facebook" href="<?php echo $fb_url ?>" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<?php
 					}
 					if (!empty($twitter_id))
 					{
 						$sum++;
 						?>
-		<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
-			<i class="fab fa-twitter"></i>
-		</a>
-		<?php 
+						<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<?php 
 					}
-						$mobile_style = '.social_mobile a, .social_mobile a:focus, .social_mobile a:hover { width: calc(100% / ' . $sum . ');}';
-						$document->addStyleDeclaration($mobile_style); 
+					$mobile_style = '.jssocial_mobile_view a, .jssocial_mobile_view a:focus, .jssocial_mobile_view a:hover { width: calc(100% / ' . $sum . ');}';
+					$document->addStyleDeclaration($mobile_style); 
 				?>
-	</div>
-</div>
-<?php 
+				</div>
+			</div>
+			<?php 
 		}
 
 		#______________________DESKTOP________________________
 		?>
-<div class="social_slider" style="top: <?php echo $params->get('margintop') ?> !important;">
-	<?php
+		<div class="jssocial_desktop_view" style="top: <?php echo $params->get('margintop') ?> !important;">
+		<?php
 			if (!empty($facebook_id))
 			{
 				?>
-	<input id="tab1" type="radio" name="tabs" checked />
-	<label for="tab1" class="facebook_icon" style="max-width: 32px;"><span>facebook</span><i
-			class="fab fa-facebook-f"></i></label>
-	<section id="content1">
-		<div class="facebook_box">
-			<iframe
-				src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-				width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-				allowfullscreen="true"
-				allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-			</iframe>
-		</div>
-	</section>
-	<?php 
+				<input id="tabOne" type="radio" name="tabs" checked />
+				<label for="tabOne" class="facebook_icon" style="max-width: 32px;">
+					<span>facebook</span>
+					<i class="fab fa-facebook-f"></i>
+				</label>
+				<section id="contentOne">
+					<div class="facebook_box">
+						<iframe
+							src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/<?php echo $params->get('facebook_login'); ?>&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+							width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+							allowfullscreen="true"
+							allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+						</iframe>
+					</div>
+				</section>
+				<?php 
 			}
 			if (!empty($twitter_id))
 			{
 				?>
-	<input id="tab2" type="radio" name="tabs" />
-	<label for="tab2" class="twitter_icon" style="max-width: 32px;"><span>twitter</span><i
-			class="fab fa-twitter"></i></label>
-	<section id="content2">
-		<div class="twitter_box">
-			<a class="twitter-timeline" data-width="350" data-height="500"
-				href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
-			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-	</section>
-	<?php
+				<input id="tabTwo" type="radio" name="tabs" />
+				<label for="tabTwo" class="twitter_icon" style="max-width: 32px;">
+					<span>twitter</span>
+					<i class="fab fa-twitter"></i>
+				</label>
+				<section id="contentTwo">
+					<div class="twitter_box">
+						<a class="twitter-timeline" data-width="350" data-height="500"
+							href="https://twitter.com/<?php echo $twitter_id ?>">Tweets by <?php echo $twitter_id ?></a>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</section>
+				<?php
 			}
 			if (trim($params->get('position')) == 1) 
 			{
 				if (trim($params->get('buttons_shape')) == 1) 
 				{
-					$buttons_shape = '.social_slider .facebook_icon, .social_slider .twitter_icon {border-radius: 0 7px 7px 0 !important;}';
+					$buttons_shape = '.jssocial_desktop_view .facebook_icon, .jssocial_desktop_view .twitter_icon {border-radius: 0 7px 7px 0 !important;}';
 					$document->addStyleDeclaration($buttons_shape);
 				}
-				$position_left = '.social_slider {left:-370px;}.social_slider:hover{transform: translateX(370px);}.social_slider .facebook_icon{float:right;right:-31px; clear: right;}.social_slider .twitter_icon{float:right; clear: right;right:-31px}';
+				$position_left = '.jssocial_desktop_view {left:-370px;}.jssocial_desktop_view:hover{transform: translateX(370px);}.jssocial_desktop_view .facebook_icon{float:right;right:-31px; clear: right;}.jssocial_desktop_view .twitter_icon{float:right; clear: right;right:-31px}';
 				$document->addStyleDeclaration($position_left);
 			} 
 			else 
@@ -128,22 +132,20 @@ class modSlideLikebox
 				{
 					if (trim($params->get('buttons_shape')) == 1) 
 					{
-						$buttons_shape = '.social_slider .facebook_icon, .social_slider .twitter_icon {border-radius: 7px 0 0 7px !important;}';
+						$buttons_shape = '.jssocial_desktop_view .facebook_icon, .jssocial_desktop_view .twitter_icon {border-radius: 7px 0 0 7px !important;}';
 						$document->addStyleDeclaration($buttons_shape);
 					}
-					$position_right = '.social_slider {right:-370px;}.social_slider:hover{transform: translateX(-370px);} .social_slider .facebook_icon{float:left;left:-31px; clear: left;}.social_slider .twitter_icon{float:left;left:-31px; clear: left;}';
+					$position_right = '.jssocial_desktop_view {right:-370px;}.jssocial_desktop_view:hover{transform: translateX(-370px);} .jssocial_desktop_view .facebook_icon{float:left;left:-31px; clear: left;}.jssocial_desktop_view .twitter_icon{float:left;left:-31px; clear: left;}';
 					$document->addStyleDeclaration($position_right);
 				}
 			} 
 			?>
-	<div class="copyrightlink">Designed with
-		<span style="color: #f44336;">❤</span> by
-		<a title="Joomla Extensions" target="_blank" href="https://jsns.eu" rel="noopener">jsns.eu</a>
-	</div>
-</div>
-</div>
-</div>
-<?php		
+			<div class="copyrightlink">Designed with
+				<span style="color: #f44336;">❤</span> by
+				<a title="Joomla Extensions" target="_blank" href="https://jsns.eu" rel="noopener">jsns.eu</a>
+			</div>
+		</div>
+		<?php		
 	}
 }
 ?>
