@@ -16,7 +16,7 @@ class modSlideLikebox
 	{
 		global $mainframe;
 		$document = JFactory::getDocument();
-		
+
 		$facebook_id = $params->get('facebook_login');
 		$twitter_id =  $params->get('twitter_login');
 		$font_awesome_cdn = $params->get('fa_cdn');
@@ -25,9 +25,9 @@ class modSlideLikebox
 		if ($font_awesome_cdn == 1) {
 			$document->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 		}
-		
+
 		#______________________MOBILE________________________
-		if (trim($params->get('show_on_mobile')) == 1) 
+		if (trim($params->get('show_on_mobile')) == 1)
 		{
 			?>
 			<div class="jssocial_mobile_view">
@@ -40,15 +40,15 @@ class modSlideLikebox
 						$iPhone  = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
 						$iPad    = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
 						$Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
-			
-						if ($iPhone || $iPad) 
+
+						if ($iPhone || $iPad)
 						{
 							$fb_url = 'fb://profile/' . $facebook_id;
-						} 
+						}
 						else if ($Android) {
 							$fb_url = 'fb://page/' . $facebook_id;
 						}
-						else 
+						else
 						{
 							$fb_url = 'https://facebook.com/' . $facebook_id;
 						}
@@ -65,14 +65,14 @@ class modSlideLikebox
 						<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
 							<i class="fab fa-twitter"></i>
 						</a>
-						<?php 
+						<?php
 					}
 					$mobile_style = '.jssocial_mobile_view a, .jssocial_mobile_view a:focus, .jssocial_mobile_view a:hover { width: calc(100% / ' . $sum . ');}';
-					$document->addStyleDeclaration($mobile_style); 
+					$document->addStyleDeclaration($mobile_style);
 				?>
 				</div>
 			</div>
-			<?php 
+			<?php
 		}
 
 		#______________________DESKTOP________________________
@@ -97,7 +97,7 @@ class modSlideLikebox
 						</iframe>
 					</div>
 				</section>
-				<?php 
+				<?php
 			}
 			if (!empty($twitter_id))
 			{
@@ -116,21 +116,21 @@ class modSlideLikebox
 				</section>
 				<?php
 			}
-			if (trim($params->get('position')) == 1) 
+			if (trim($params->get('position')) == 1)
 			{
-				if (trim($params->get('buttons_shape')) == 1) 
+				if (trim($params->get('buttons_shape')) == 1)
 				{
 					$buttons_shape = '.jssocial_desktop_view .facebook_icon, .jssocial_desktop_view .twitter_icon {border-radius: 0 7px 7px 0 !important;}';
 					$document->addStyleDeclaration($buttons_shape);
 				}
 				$position_left = '.jssocial_desktop_view {left:-370px;}.jssocial_desktop_view:hover{transform: translateX(370px);}.jssocial_desktop_view .facebook_icon{float:right;right:-31px; clear: right;}.jssocial_desktop_view .twitter_icon{float:right; clear: right;right:-31px}';
 				$document->addStyleDeclaration($position_left);
-			} 
-			else 
+			}
+			else
 			{
-				if (trim($params->get('position')) == 0) 
+				if (trim($params->get('position')) == 0)
 				{
-					if (trim($params->get('buttons_shape')) == 1) 
+					if (trim($params->get('buttons_shape')) == 1)
 					{
 						$buttons_shape = '.jssocial_desktop_view .facebook_icon, .jssocial_desktop_view .twitter_icon {border-radius: 7px 0 0 7px !important;}';
 						$document->addStyleDeclaration($buttons_shape);
@@ -138,14 +138,14 @@ class modSlideLikebox
 					$position_right = '.jssocial_desktop_view {right:-370px;}.jssocial_desktop_view:hover{transform: translateX(-370px);} .jssocial_desktop_view .facebook_icon{float:left;left:-31px; clear: left;}.jssocial_desktop_view .twitter_icon{float:left;left:-31px; clear: left;}';
 					$document->addStyleDeclaration($position_right);
 				}
-			} 
+			}
 			?>
 			<div class="copyrightlink">Designed with
 				<span style="color: #f44336;">❤</span> by
 				<a title="Joomla Extensions" target="_blank" href="https://jsns.eu" rel="noopener">jsns.eu</a>
 			</div>
 		</div>
-		<?php		
+		<?php
 	}
 }
 ?>
