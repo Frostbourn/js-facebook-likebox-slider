@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="4.0" method="upgrade">
+<extension type="module" client="site" method="upgrade">
     <name>JS Like Box Slider</name>
     <author>Jakub Skowroński</author>
     <creationDate>2013-07-15</creationDate>
@@ -7,7 +7,7 @@
     <license>GPL 2.0</license>
     <authorEmail>kontakt@jakubskowronski.com</authorEmail>
     <authorUrl>https://jakubskowronski.com</authorUrl>
-    <version>7.0.1</version>
+    <version>7.0.2</version>
     <description>
         <![CDATA[<div><a href="https://jsns.eu/extensions/joomla/js-like-box-slider" target="_blank"><img style="display: block; max-width: 600px; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/pricing.png" alt=""></a></div><br><br><br><br>
         <h3>Troubleshooting</h3>
