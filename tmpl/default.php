@@ -23,7 +23,7 @@ class modSlideLikebox
 
 		$document->addStyleSheet(JURI::root() . 'modules/mod_facebook_slide_likebox/tmpl/css/style.min' . '.css', 'text/css', null, array());
 		if ($font_awesome_cdn == 1) {
-			$document->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+			$document->addStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 		}
 
 		#______________________MOBILE________________________
@@ -63,7 +63,7 @@ class modSlideLikebox
 						$sum++;
 						?>
 						<a class="twitter" href="https://twitter.com/<?php echo $twitter_id ?>" target="_blank">
-							<i class="fab fa-twitter"></i>
+							<i class="fab fa-x-twitter"></i>
 						</a>
 						<?php
 					}
@@ -77,7 +77,7 @@ class modSlideLikebox
 
 		#______________________DESKTOP________________________
 		?>
-		<div class="jssocial_desktop_view" style="top: <?php echo $params->get('margintop') ?> !important;">
+		<div class="jssocial_desktop_view" style="top: <?php echo $params->get('margin_top') ?> !important;">
 		<?php
 			if (!empty($facebook_id))
 			{
@@ -104,8 +104,8 @@ class modSlideLikebox
 				?>
 				<input id="twitterTab" type="radio" name="tabs" />
 				<label for="twitterTab" class="twitter_icon" style="max-width: 32px;">
-					<span>twitter</span>
-					<i class="fab fa-twitter"></i>
+					<span>x.com</span>
+					<i class="fab fa-x-twitter"></i>
 				</label>
 				<section id="twitterContent">
 					<div class="twitter_box">
