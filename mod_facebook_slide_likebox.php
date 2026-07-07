@@ -8,5 +8,6 @@
 //no direct access
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
-require( JModuleHelper::getLayoutPath( 'mod_facebook_slide_likebox' ) );
-?>
+use Joomla\CMS\Helper\ModuleHelper;
+
+require ModuleHelper::getLayoutPath('mod_facebook_slide_likebox');

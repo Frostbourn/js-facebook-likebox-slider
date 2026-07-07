@@ -7,7 +7,7 @@
     <license>GPL 2.0</license>
     <authorEmail>kontakt@jakubskowronski.com</authorEmail>
     <authorUrl>https://jakubskowronski.com</authorUrl>
-    <version>7.1.0</version>
+    <version>7.3.0</version>
     <description>
         <![CDATA[<div><a href="https://jsns.eu/extensions/joomla/js-like-box-slider" target="_blank"><img style="display: block; max-width: 600px; margin-left: auto; margin-right: auto;" src="https://jsns.eu/images/pricing.png" alt=""></a></div><br><br><br><br>
         <h3>Troubleshooting</h3>
@@ -47,10 +47,14 @@
                     <option value="0">No</option>
                 </field>
                 <field name="margin_top" type="text" default="10%" label="Margin top" description="Margin top"/>
-                <field type="spacer" name="fbspacer" label="&lt;i&gt;Get numerical Facebook ID here: https://lookup-id.com&lt;/i&gt;" />
-                <field name="facebook_login" type="text" label="Facebook ID" description="Numerical Facebook ID in eg: 2588865"/>
+                <field type="spacer" name="fbspacer" label="&lt;i&gt;Facebook page username, numerical ID or full page URL. ID lookup: https://lookup-id.com&lt;/i&gt;" />
+                <field name="facebook_login" type="text" label="Facebook page" description="Page username (eg: NASA), numerical ID (eg: 2588865) or full page URL"/>
                 <field type="spacer" name="twspacer" label="&lt;i&gt;Twitter ID is what comes after the www.twitter.com/ not the whoule URL.&lt;/i&gt;" />
                 <field name="twitter_login" type="text" label="Twitter ID" description="Twitter ID in eg: twitter"/>
+                <field type="spacer" name="apispacer" label="&lt;i&gt;Facebook and X (Twitter) feeds are loaded through the Social Feed API. Fill in the fields below to enable them.&lt;/i&gt;" />
+                <field name="api_url" type="url" default="https://socialproof.pl/api" label="API URL" description="Base URL of the Social Feed API, e.g. https://socialproof.pl/api"/>
+                <field name="api_key" type="text" default="" label="API Key" description="Your Social Feed API key"/>
+                <field name="api_user_id" type="text" default="" label="User ID" description="Your jsns.eu subscription user ID"/>
             </fieldset>
         </fields>
     </config>
